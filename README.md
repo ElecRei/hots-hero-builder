@@ -1,5 +1,5 @@
 # Heroes of the Storm Hero Builder
-## *Build your own Heroes of the Storm hero
+## *Build your own Heroes of the Storm hero*
 
 ## Overview
 
