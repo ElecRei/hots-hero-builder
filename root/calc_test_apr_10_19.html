@@ -42,6 +42,18 @@
 
             console.log("Current: " + outputVal);
 
+            function talentPercentFormula(iVal, iPct){
+
+                outputVal = iVal * (iPct / 100);
+
+                outputVal = iVal + outputVal;
+
+                let roundVal = Math.ceil(outputVal);
+
+                console.log("Including Percent:  " + outputVal + " Rounded: " + roundVal);
+
+            }
+
             function levelUpFormula(iVal, iMod, iLvl, iName){
 
                 outputVal = iVal * (Math.pow((1 + iMod), iLvl));
@@ -57,6 +69,8 @@
             levelUpFormula(5, 0.04, 20, "Attack");
 
             levelUpFormula(128, 0.04, 20, "Q Ability");
+
+            talentPercentFormula(14, 125);
 
         </script>
         

@@ -25,6 +25,16 @@ var outputVal;
 
 console.log("Current: " + outputVal);
 
+function talentPercentFormula(iVal, iPct){
+
+    outputVal = iVal * (iPct / 100);
+
+    outputVal = iVal + outputVal;
+
+    console.log("New: " + outputVal);
+
+}
+
 function levelUpFormula(iVal, iMod, iLvl){
 
     outputVal = iVal * (Math.pow((1 + iMod), iLvl));
