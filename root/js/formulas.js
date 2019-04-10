@@ -31,17 +31,19 @@ function talentPercentFormula(iVal, iPct){
 
     outputVal = iVal + outputVal;
 
-    console.log("New: " + outputVal);
+    let roundVal = Math.ceil(outputVal);
+
+    console.log("Including Percent:  " + outputVal + " Rounded: " + roundVal);
 
 }
 
-function levelUpFormula(iVal, iMod, iLvl){
+function levelUpFormula(iVal, iMod, iLvl, iName){
 
     outputVal = iVal * (Math.pow((1 + iMod), iLvl));
 
     outputVal = Math.round(outputVal);
 
-    console.log("New: " + outputVal);
+    console.log(iName + ": " + outputVal);
 
 }
 
