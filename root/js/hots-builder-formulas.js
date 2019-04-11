@@ -35,12 +35,16 @@ function scalingFormula(iVal, iMod, iLvl, iName){
 function funcInit(clickBtn) {
 
     if(clickBtn === 'scalingForm') {
-        let scaleVal  = $('#scaleVal').val();
-        let scaleMod  = $('#scaleMod').val();
-        let scaleLvl  = $('#scaleLvl').val();
+        let scaleVal  = parseInt($('#scaleVal').val(),10);
+        let scaleMod  = parseFloat($('#scaleMod').val());
+        let scaleLvl  = parseInt($('#scaleLvl').val(),10);
         let scaleName = $('#scaleName').val();
 
         scalingFormula(scaleVal,scaleMod,scaleLvl,scaleName);
+    }
+
+    if(clickBtn === 'percentForm') {
+        
     }
 
 }
