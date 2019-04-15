@@ -25,3 +25,7 @@ This project is currently still in development and at this moment I am working o
 * ~~Organize project files and clean up code~~
 * ~~Finish global formulas/calculations needed for builder~~
 * Flesh out the repo a bit more
+
+### Important Links
+
+* [Stats Calculator Sandbox](https://codepen.io/ElecRei/pen/oOogZX)
