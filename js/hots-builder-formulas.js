@@ -2,7 +2,7 @@
 
 function percentFormula(iVal, iPct){
 
-    let outputVal = iVal * (iPct / 100);
+    let outputVal = iVal * iPct;
 
     outputVal = iVal + outputVal;
 
@@ -44,7 +44,10 @@ function funcInit(clickBtn) {
     }
 
     if(clickBtn === 'percentForm') {
+        let pctVal  = parseInt($('#pctVal').val(),10);
+        let pctMod  = parseFloat($('#pctMod').val()) / 100;
 
+        percentFormula(pctVal, pctMod);
     }
 
 }

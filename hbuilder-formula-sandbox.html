@@ -23,7 +23,13 @@
             
             /* ////////// */
 
-            form.scaling-form {
+            div.site-container {
+                width: 980px;
+                height: auto;
+                margin: 0 auto;
+            }
+
+            form {
                 background: #FFF;
                 background: url(imgs/hots-bg.jpg) no-repeat;
                 background-position: 50% 0%;
@@ -33,48 +39,54 @@
                 font-family: 'Exo', sans-serif;
                 font-size: .8em;
 
-                width: 25%;
-                margin: 0 0 12px 0;
+                width: 46%;
+                height: 250px;
+                margin: 2%;
                 float: left;
             }
 
-                form.scaling-form fieldset {
+                form fieldset {
                     border: none;
 
                     margin: 2% 1%;
                     padding: 0;
                 }
 
-                form.scaling-form legend {
+                form legend {
                     font-size: 1.2em;
                     font-weight: bold;
                 }
 
-                form.scaling-form label,
-                form.scaling-form input {
+                form label,
+                form input {
                     display: block;
                     float: left;
                 }
 
-                    form.scaling-form label:first-of-type,
-                    form.scaling-form input:first-of-type { margin-top: 12px; }
+                    form label:first-of-type,
+                    form input:first-of-type { margin-top: 12px; }
 
-                form.scaling-form label {
+                form label {
                     width: 25%;
                     text-align: right;
                 }
 
-                form.scaling-form label + input {
+                form label + input {
                     width: 68%;
                     margin: 0 5% 12px 2%
                 }
-
-                    form.scaling-form label + input#scaleMod {
+                    
+                    form label + input#scaleMod {
                         width: 68%;
                         margin: 0 0 12px 2%;
                     }
 
-                    form.scaling-form input + span { 
+                    form label + input#pctMod {
+                        width: 68%;
+                        margin: 0 0 12px 2%;
+                    }
+
+                    form input + span { 
                         font-weight: bold;
                         line-height: 21px;
 
@@ -92,8 +104,9 @@
                 font-family: monospace;
                 overflow-y: scroll;
 
-                width: 800px;
+                width: 96%;
                 height: 200px;
+                margin: 2%;
                 padding: 12px 10px;
                 clear: left;
             }
@@ -115,31 +128,51 @@
     
     <body>
 
-        <form class="scaling-form">
-            <fieldset>
-                <legend>Stat Scaling</legend>
-                <label for="inputValue">Stat Value: </label>
-                <input name="inputValue" type="text" id="scaleVal" />
-                <br>
+        <div class="site-container">
 
-                <label for="inputModifier">Scaling Modifier: </label>
-                <input name="inputModifier" type="text" id="scaleMod" /><span>%</span>
-                <br>
+            <form class="scaling-form">
+                <fieldset>
+                    <legend>Stat Scaling</legend>
+                    <label for="inputValue">Stat Value: </label>
+                    <input name="inputValue" type="text" id="scaleVal" />
+                    <br>
 
-                <label for="inputLevel">Level: </label>
-                <input name="inputLevel" type="text" id="scaleLvl" />
-                <br>
+                    <label for="inputModifier">Scaling Modifier: </label>
+                    <input name="inputModifier" type="text" id="scaleMod" /><span>%</span>
+                    <br>
 
-                <label for="inputValueName">Value Name: </label>
-                <input name="inputName" type="text" id="scaleName" />
-                <br>
+                    <label for="inputLevel">Level: </label>
+                    <input name="inputLevel" type="text" id="scaleLvl" />
+                    <br>
 
-                <button name="Submit" type="button" id="statScaleBtn" onclick="funcInit('scalingForm')">Submit</button>
+                    <label for="inputValueName">Value Name: </label>
+                    <input name="inputName" type="text" id="scaleName" />
+                    <br>
 
-            </fieldset>
-        </form>
-        
-        <div class="output-console"></div>
+                    <button name="Submit" type="button" id="statScaleBtn" onclick="funcInit('scalingForm')">Submit</button>
+
+                </fieldset>
+            </form>
+
+            <form class="percent-form">
+                <fieldset>
+                    <legend>Percent Addition</legend>
+                    <label for="inputValue">Stat Value: </label>
+                    <input name="inputValue" type="text" id="pctVal" />
+                    <br>
+
+                    <label for="inputModifier">Modifier: </label>
+                    <input name="inputModifier" type="text" id="pctMod" /><span>%</span>
+                    <br>
+
+                    <button name="Submit" type="button" id="statPctBtn" onclick="funcInit('percentForm')">Submit</button>
+
+                </fieldset>
+            </form>
+            
+            <div class="output-console"></div>
+
+        </div>
 
         <script type="text/javascript" src="js/hots-builder-formulas.js"></script>
 
