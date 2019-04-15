@@ -71,7 +71,9 @@
                     text-align: right;
                 }
 
-                form label + input {
+                form label + input,
+                form label + select
+                {
                     width: 68%;
                     margin: 0 5% 12px 2%
                 }
@@ -146,17 +148,14 @@
                     <br>
 
                     <label for="inputValueName">Value Name: </label>
-                    <input name="inputName" type="text" id="scaleName" />
-                    <br>
-
-                    <label for="inputValueName">Value Name: </label>
-                    <select name="inputName" id="scaleName" />
-                        <option value="Health">Health</option>
+                    <select name="inputName" id="scaleName" onclick="valSelect()">
+                        <option value="Health" selected>Health</option>
                         <option value="Health Regen">Health Regen</option>
                         <option value="Mana">Mana</option>
                         <option value="Mana Regen">Mana Regen</option>
                         <option value="Attack Damage">Attack Damage</option>
                         <option value="Ability Damage">Ability Damage</option>
+                    </select>
                     <br>
 
                     <button name="Submit" type="button" id="statScaleBtn" onclick="funcInit('scalingForm')">Submit</button>
@@ -184,7 +183,7 @@
 
         </div>
 
-        <script type="text/javascript" src="js/hots-builder-formulas.js"></script>
+        <script type="text/javascript" src="js/hots-builder-formulas-v2.js"></script>
 
         <script type="text/javascript">
 
@@ -200,6 +199,20 @@
             percentFormula(14, 125);
             scalingFormula(14, 0.04, 10, "Attack Damage");
             percentFormula(21, 125);
+
+            function valSelect() {
+                
+                if($('#scaleName').val() == 'Mana'){
+                    $('#scaleVal').val('490');
+                }
+
+                if($('#scaleName').val() == 'Mana Regen'){
+                    $('#scaleVal').val('2.90');
+                }
+
+            }
+
+            
         
         </script>
         
