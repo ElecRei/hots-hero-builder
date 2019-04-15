@@ -17,6 +17,7 @@ This project is currently still in development and at this moment I am working o
 #### Weekly To-do's for the week of *April 14th - 20th*
 
 * Finish up sandbox
+  * Include new Mana formulas and fixes
   * Finish layout design
   * Close any remaining project tasks
   * Merge with primary dev branch
