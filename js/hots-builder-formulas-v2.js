@@ -18,10 +18,8 @@ function percentFormula(iVal, iPct){
 
 function scalingFormula(iVal, iMod, iLvl, iName){
 
-    var outputVal;
-
     if(iName == "Mana") {
-        outputVal = iVal + (10 * iLvl);
+        let outputVal = iVal + (10 * iLvl);
 
         console.log("Mana Equation - " + outputVal);
 
@@ -31,7 +29,11 @@ function scalingFormula(iVal, iMod, iLvl, iName){
     }
 
     else if(iName == "Mana Regen") {
-        outputVal = iVal + (.0975 * iLvl);
+        //outputVal = iVal + (.0975 * iLvl);
+
+        let outputVal = 2.90 + (parseFloat(0.0975)*iLvl);
+
+        console.log(outputVal);
 
         outputVal = outputVal.toFixed(2);
 
@@ -43,7 +45,7 @@ function scalingFormula(iVal, iMod, iLvl, iName){
     }
 
     else {
-        outputVal = iVal * (Math.pow((1 + iMod), iLvl));
+        let outputVal = iVal * (Math.pow((1 + iMod), iLvl));
 
         console.log("Equation - " + outputVal);
 
@@ -61,7 +63,15 @@ function funcInit(clickBtn) {
     console.log("pre button click");
 
     if(clickBtn === 'scalingForm') {
-        let scaleVal  = parseInt($('#scaleVal').val(),10);
+
+        let scaleVal;
+        if($('#scaleName').val() == "Mana Regen"){
+            scaleVal  = parseFloat($('#scaleVal').val());
+        }
+        else {
+            scaleVal  = parseInt($('#scaleVal').val(),10);
+            console.log("Check " + scaleVal);
+        }
         let scaleMod  = parseFloat($('#scaleMod').val()) / 100;
         let scaleLvl  = parseInt($('#scaleLvl').val(),10);
         let scaleName = $('#scaleName').val();
