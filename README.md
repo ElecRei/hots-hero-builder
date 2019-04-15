@@ -28,4 +28,4 @@ This project is currently still in development and at this moment I am working o
 
 ### Important Links
 
-* <a href="https://codepen.io/ElecRei/pen/oOogZX" target="_blank">Stats Calculator Sandbox</a>
+* [HotS Stats Calculator](https://codepen.io/ElecRei/pen/oOogZX)
