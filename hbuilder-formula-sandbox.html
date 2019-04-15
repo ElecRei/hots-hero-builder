@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HotS - Hero Builder - Formula Sandbox</title>
+        <meta name="description" content="__">
+
+        <!-- CSS -->
+        
+        <style>
+
+            * {
+                box-sizing: border-box;
+            }
+                
+            /* IMPORTS
+            /////////// */
+            
+            /* Exo */
+            @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+            /* font-family: 'Exo', sans-serif; */
+            
+            /* ////////// */
+
+            div.site-container {
+                width: 980px;
+                height: auto;
+                margin: 0 auto;
+            }
+
+            form {
+                background: #FFF;
+                background: url(imgs/hots-bg.jpg) no-repeat;
+                background-position: 50% 0%;
+                border: 3px solid #29292e;
+                border-radius: 4px;
+                color: #FFF;
+                font-family: 'Exo', sans-serif;
+                font-size: .8em;
+
+                width: 46%;
+                height: 250px;
+                margin: 2%;
+                float: left;
+            }
+
+                form fieldset {
+                    border: none;
+
+                    margin: 2% 1%;
+                    padding: 0;
+                }
+
+                form legend {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+
+                form label,
+                form input {
+                    display: block;
+                    float: left;
+                }
+
+                    form label:first-of-type,
+                    form input:first-of-type { margin-top: 12px; }
+
+                form label {
+                    width: 25%;
+                    text-align: right;
+                }
+
+                form label + input {
+                    width: 68%;
+                    margin: 0 5% 12px 2%
+                }
+                    
+                    form label + input#scaleMod {
+                        width: 68%;
+                        margin: 0 0 12px 2%;
+                    }
+
+                    form label + input#pctMod {
+                        width: 68%;
+                        margin: 0 0 12px 2%;
+                    }
+
+                    form input + span { 
+                        font-weight: bold;
+                        line-height: 21px;
+
+                        display: block;
+                        width: 3%;
+                        margin: 0 1%;
+                        float: left;
+                    }
+
+            .output-console {
+                display: block;
+                background: #29292e;
+                border-radius: 4px;
+                color: #f8f8f2;
+                font-family: monospace;
+                overflow-y: scroll;
+
+                width: 96%;
+                height: 200px;
+                margin: 2%;
+                padding: 12px 10px;
+                clear: left;
+            }
+    
+        </style>
+    
+    <!-- JS + jQuery -->
+    
+        <!-- jQuery 3.3.1 Min CDN -->
+    
+            <script
+                src="http://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous">
+            </script>
+            
+    </head>
+    
+    
+    <body>
+
+        <div class="site-container">
+
+            <form class="scaling-form">
+                <fieldset>
+                    <legend>Stat Scaling</legend>
+                    <label for="inputValue">Stat Value: </label>
+                    <input name="inputValue" type="text" id="scaleVal" />
+                    <br>
+
+                    <label for="inputModifier">Scaling Modifier: </label>
+                    <input name="inputModifier" type="text" id="scaleMod" /><span>%</span>
+                    <br>
+
+                    <label for="inputLevel">Level: </label>
+                    <input name="inputLevel" type="text" id="scaleLvl" />
+                    <br>
+
+                    <label for="inputValueName">Value Name: </label>
+                    <input name="inputName" type="text" id="scaleName" />
+                    <br>
+
+                    <label for="inputValueName">Value Name: </label>
+                    <select name="inputName" id="scaleName" />
+                        <option value="Health">Health</option>
+                        <option value="Health Regen">Health Regen</option>
+                        <option value="Mana">Mana</option>
+                        <option value="Mana Regen">Mana Regen</option>
+                        <option value="Attack Damage">Attack Damage</option>
+                        <option value="Ability Damage">Ability Damage</option>
+                    <br>
+
+                    <button name="Submit" type="button" id="statScaleBtn" onclick="funcInit('scalingForm')">Submit</button>
+
+                </fieldset>
+            </form>
+
+            <form class="percent-form">
+                <fieldset>
+                    <legend>Percent Addition</legend>
+                    <label for="inputValue">Stat Value: </label>
+                    <input name="inputValue" type="text" id="pctVal" />
+                    <br>
+
+                    <label for="inputModifier">Modifier: </label>
+                    <input name="inputModifier" type="text" id="pctMod" /><span>%</span>
+                    <br>
+
+                    <button name="Submit" type="button" id="statPctBtn" onclick="funcInit('percentForm')">Submit</button>
+
+                </fieldset>
+            </form>
+            
+            <div class="output-console"></div>
+
+        </div>
+
+        <script type="text/javascript" src="js/hots-builder-formulas.js"></script>
+
+        <script type="text/javascript">
+
+            /*
+            $('#statScaleBtn').click(function(){
+                scalingFormula($('#scaleVal').value, $('#scaleMod').value, $('#scaleLvl').value, $('#scaleName').value)
+            });
+            */
+
+
+            scalingFormula(1287, 0.04, 10, "Health");
+            scalingFormula(2.68, 0.04, 10, "Health Regen");
+            percentFormula(14, 125);
+            scalingFormula(14, 0.04, 10, "Attack Damage");
+            percentFormula(21, 125);
+        
+        </script>
+        
+    </body>
+    
+</html>
