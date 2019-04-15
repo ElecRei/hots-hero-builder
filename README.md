@@ -30,5 +30,5 @@ This project is currently still in development and at this moment I am working o
 ### Important Links
 
 * [HotS Stats Calculator](https://codepen.io/ElecRei/pen/oOogZX)
-* **HotS Scaling Formula
+* **HotS Scaling Formula**
   * [Heroes of the Storm Wiki - Scaling](https://heroesofthestorm.gamepedia.com/Scaling#Formula)
