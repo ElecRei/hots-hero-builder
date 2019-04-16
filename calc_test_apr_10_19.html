@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HotS - Hero Builder - Calc Test</title>
+        <meta name="description" content="__">
+
+        <!-- CSS -->
+        
+        <style>
+                
+            /* IMPORTS
+            /////////// */
+            
+            /* Exo */
+            @import url('https://fonts.googleapis.com/css?family=Exo:500,700');
+            /* font-family: 'Exo', sans-serif; */
+            
+            /* ////////// */
+    
+        </style>
+    
+    <!-- JS + jQuery -->
+    
+        <!-- jQuery 3.3.1 Min CDN -->
+    
+            <script
+                src="http://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous">
+            </script>
+            
+    </head>
+    
+    
+    <body>
+        
+        <script type="text/javascript">
+            
+            var outputVal;
+
+            console.log("Current: " + outputVal);
+
+            function talentPercentFormula(iVal, iPct){
+
+                outputVal = iVal * (iPct / 100);
+
+                outputVal = iVal + outputVal;
+
+                let roundVal = Math.ceil(outputVal);
+
+                console.log("Including Percent:  " + outputVal + " Rounded: " + roundVal);
+
+            }
+
+            function levelUpFormula(iVal, iMod, iLvl, iName){
+
+                outputVal = iVal * (Math.pow((1 + iMod), iLvl));
+
+                outputVal = Math.round(outputVal);
+
+                console.log(iName + ": " + outputVal);
+
+            }
+
+            levelUpFormula(1850, 0.04, 20, "Health");
+
+            levelUpFormula(5, 0.04, 20, "Attack");
+
+            levelUpFormula(128, 0.04, 20, "Q Ability");
+
+            talentPercentFormula(14, 125);
+
+        </script>
+        
+    </body>
+    
+</html>

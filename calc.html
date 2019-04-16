@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calc</title>
+        <meta name="description" content="__">
+        
+        <!-- JS + jQuery -->
+        
+            <!-- jQuery 3.3.1 Min CDN -->
+        
+                <script
+                    src="http://code.jquery.com/jquery-3.3.1.min.js"
+                    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                    crossorigin="anonymous">
+                </script>
+            
+    </head>
+    
+    
+    <body>
+        
+        
+        <p>Wrecking Ball Health: </p><span id="outputVal">1800</span>
+        
+        <br><br>
+        
+        <p>Current Level: </p><span id="outputLvl">0</span>
+        
+        <br><br>
+        
+        <button onclick="levelUp();">Level Up!</button>
+        
+        <br><br>
+        
+        <table id="outputTable">
+            <tr>
+                <th>Level</th>
+                <th>Total HP</th>
+            </tr>
+            <!--
+            <tr>
+                <td class="lv_0">Level 0</td>
+                <td class="hp_0">1800</td>
+            </tr>
+            -->
+        </table>
+        
+        
+        
+        <script type="text/javascript">
+            
+            function levelUpTable(){
+                
+                var rowCounter = 0;
+                
+                for(var i = 0; i <= 30; i++) {
+                    
+                    var getVal = $("#outputVal").text();
+                    
+                        getVal = parseInt(getVal);
+                    
+                    var newVal = 1800 * (Math.pow((1 + 0.04), rowCounter));
+                
+                        newVal = Math.round(newVal);
+                    
+                    $("#outputTable").append(
+                        "<tr>" +
+                        "<td class='lv_" + rowCounter + "'>" +
+                        "Level " + 
+                        rowCounter +
+                        "</td>" +
+                        "<td class='hp_" + rowCounter + "'>" +
+                        newVal +
+                        "</td>" +
+                        "</tr>"
+                    );
+                    
+                    rowCounter++;
+                    
+                }
+                
+            }
+            
+            levelUpTable();
+            
+            curLevel = 0;
+        
+            function levelUp(){
+                
+                curLevel += 1;
+                
+                var getVal = $("#outputVal").text();
+                
+                getVal = parseInt(getVal);
+                
+                //BaseValue × (1 + ScalingPercent/100)^Level
+                
+                var newVal = 1800 * (Math.pow((1 + 0.04), curLevel));
+                
+                newVal = Math.round(newVal);
+                
+                console.log(newVal);
+                
+                //console.log("Static: " + mathVal);
+                
+                $("#outputVal").html(newVal);
+                $("#outputLvl").html(curLevel);
+                
+                
+                
+            }
+        
+        </script>
+        
+    </body>
+    
+</html>
