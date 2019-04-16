@@ -32,7 +32,7 @@ Below is a brief to-do list for the week that is updated weekly:
 * ~~Finish global formulas/calculations needed for builder~~
 
 
-### Important Links
+## Important Links
 
 * [HotS Stats Calculator](https://codepen.io/ElecRei/pen/KYyzjV)
 * **HotS Scaling Formulas**
