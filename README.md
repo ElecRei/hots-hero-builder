@@ -12,20 +12,25 @@ This is a hero builder for the "Heroes of the Storm" game from Blizzard. With it
 
 ## Current Progress
 
-This project is currently still in development and at this moment I am working on the calculations required for level adjustments. Below is a brief to-do list for the week that is updated weekly:
+Currently working on building the layout for the Hero Builder itself. This will include for now a basic form and output area similar to the sandbox. Unlike the sandbox though this form will include all the stats/values necessary for a hero ([Heroes of the Storm Wiki - Statistics](https://heroesofthestorm.gamepedia.com/Statistics)) and then calculate the values for you. For now it's going to be pretty simple. :grin:
+
+Below is a brief to-do list for the week that is updated weekly:
 
 #### Weekly To-do's for the week of *April 14th - 20th*
 
-* Finish up sandbox
-  * Include new Mana formulas and fixes
-  * Finish layout design
-  * Close any remaining project tasks
-  * Merge with primary dev branch
 * Start building Hero Builder page
   * Build necessary form with required fields
+* Update Sandbox
+  * Look into other formulas needed and include other operations for some formulas (i.e. subtract a percentage from a value)
+* Flesh out the repo a bit more
+* ~~Finish up sandbox
+  * ~~Include new Mana formulas and fixes
+  * ~~Finish layout design
+  * ~~Close any remaining project tasks
+  * ~~Merge with primary dev branch
 * ~~Organize project files and clean up code~~
 * ~~Finish global formulas/calculations needed for builder~~
-* Flesh out the repo a bit more
+
 
 ### Important Links
 
