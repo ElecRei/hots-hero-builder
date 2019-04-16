@@ -23,11 +23,11 @@ Below is a brief to-do list for the week that is updated weekly:
 * Update Sandbox
   * Look into other formulas needed and include other operations for some formulas (i.e. subtract a percentage from a value)
 * Flesh out the repo a bit more
-* ~~Finish up sandbox
-  * ~~Include new Mana formulas and fixes
-  * ~~Finish layout design
-  * ~~Close any remaining project tasks
-  * ~~Merge with primary dev branch
+* ~~Finish up sandbox~~
+  * ~~Include new Mana formulas and fixes~~
+  * ~~Finish layout design~~
+  * ~~Close any remaining project tasks~~
+  * ~~Merge with primary dev branch~~
 * ~~Organize project files and clean up code~~
 * ~~Finish global formulas/calculations needed for builder~~
 
