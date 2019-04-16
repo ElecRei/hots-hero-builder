@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HotS - Hero Builder</title>
+        <meta name="description" content="__">
+        
+        <!-- CSS -->
+        
+        <style>
+
+            * {
+                box-sizing: border-box;
+                font-family: 'Exo', sans-serif;
+            }
+                
+            /* IMPORTS
+            /////////// */
+            
+            /* Exo */
+            @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+            /* font-family: 'Exo', sans-serif; */
+            
+            /* ////////// */
+
+            div.site-container {
+                width: 980px;
+                height: auto;
+                margin: 0 auto;
+            }
+
+                div.site-container h1 {
+                    font-size: 2em;
+                    text-align: center;
+                }
+
+            .output-console {
+                display: block;
+                background: #29292e;
+                border-radius: 4px;
+                color: #f8f8f2;
+                font-family: monospace;
+                overflow-y: scroll;
+
+                width: 96%;
+                height: 200px;
+                margin: 2%;
+                padding: 12px 10px;
+                clear: left;
+            }
+    
+        </style>
+    
+        <!-- JS + jQuery -->
+        
+            <!-- jQuery 3.3.1 Min CDN -->
+        
+                <script
+                    src="http://code.jquery.com/jquery-3.3.1.min.js"
+                    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                    crossorigin="anonymous">
+                </script>
+
+    </head>
+    
+    
+    <body>
+        
+        <div class="site-container">
+
+            <h1>HotS - Hero Builder</h1>
+
+            <form>
+                <fieldset>
+                    <legend>Hero Stats</legend>
+
+                    <label for="inputValue">Health: </label>
+                    <input name="inputValue" type="text" id="hbHealth" />
+                    <br>
+
+                    <label for="inputValue">Health Regen: </label>
+                    <input name="inputValue" type="text" id="hbHgen" />
+                    <br>
+
+                    <label for="inputValue">Mana: </label>
+                    <input name="inputValue" type="text" id="hbMana" />
+                    <br>
+
+                    <label for="inputValue">Mana Regen: </label>
+                    <input name="inputValue" type="text" id="hbMgen" />
+                    <br>
+
+                    <label for="inputValue">Attack Damage: </label>
+                    <input name="inputValue" type="text" id="hbAtkDmg" />
+                    <br>
+                    
+                    <label for="inputValue">Attack Speed: </label>
+                    <input name="inputValue" type="text" id="hbAtkSpd" />
+                    <br>
+
+                    <label for="inputValue">Attack Range: </label>
+                    <input name="inputValue" type="text" id="hbAtkRng" />
+                    <br>
+
+                    <label for="inputValue">Movement Speed: </label>
+                    <input name="inputValue" type="text" id="hbMove" />
+                    <br>
+
+                    <button name="Submit" type="button" id="hbBtn" onclick="funcInit('hbForm')">Submit</button>
+
+                </fieldset>
+            </form>
+
+        </div>
+        
+    </body>
+    
+</html>
