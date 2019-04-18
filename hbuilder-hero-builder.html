@@ -114,35 +114,35 @@
                     <legend>Hero Stats</legend>
 
                     <label for="inputValue">Health: </label>
-                    <input name="inputValue" type="text" id="hbHealth" />
+                    <input name="inputValue" type="text" id="hb1" />
                     <br>
 
                     <label for="inputValue">Health Regen: </label>
-                    <input name="inputValue" type="text" id="hbHgen" />
+                    <input name="inputValue" type="text" id="hb2" />
                     <br>
 
                     <label for="inputValue">Mana: </label>
-                    <input name="inputValue" type="text" id="hbMana" />
+                    <input name="inputValue" type="text" id="hb3" />
                     <br>
 
                     <label for="inputValue">Mana Regen: </label>
-                    <input name="inputValue" type="text" id="hbMgen" />
+                    <input name="inputValue" type="text" id="hb4" />
                     <br>
 
                     <label for="inputValue">Attack Damage: </label>
-                    <input name="inputValue" type="text" id="hbAtkDmg" />
+                    <input name="inputValue" type="text" id="hb5" />
                     <br>
                     
                     <label for="inputValue">Attack Speed: </label>
-                    <input name="inputValue" type="text" id="hbAtkSpd" />
+                    <input name="inputValue" type="text" id="hb6" />
                     <br>
 
                     <label for="inputValue">Attack Range: </label>
-                    <input name="inputValue" type="text" id="hbAtkRng" />
+                    <input name="inputValue" type="text" id="hb7" />
                     <br>
 
                     <label for="inputValue">Movement Speed: </label>
-                    <input name="inputValue" type="text" id="hbMove" />
+                    <input name="inputValue" type="text" id="hb8" />
                     <br>
 
                     <button name="Submit" type="button" id="hbBtn" onclick="funcHB()">Submit</button>
@@ -155,6 +155,18 @@
         </div>
 
         <script type="text/javascript" src="js/hots-builder-func.js"></script>
+
+        <script type="text/javascript">
+
+        $('#hb2').on("focusout", function(){
+
+            let hb2Val = (parseInt($(this).val())).toFixed(2);
+
+            $(this).val(hb2Val);
+
+        });
+        
+        </script>
         
     </body>
     
