@@ -114,35 +114,35 @@
                     <legend>Hero Stats</legend>
 
                     <label for="inputValue">Health: </label>
-                    <input name="inputValue" type="text" id="hb1" />
+                    <input name="inputValue" type="text" class="hbInt" id="hbInput1" />
                     <br>
 
                     <label for="inputValue">Health Regen: </label>
-                    <input name="inputValue" type="text" id="hb2" />
+                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbInput2" />
                     <br>
 
                     <label for="inputValue">Mana: </label>
-                    <input name="inputValue" type="text" id="hb3" />
+                    <input name="inputValue" type="text" class="hbInt" id="hbInput3" />
                     <br>
 
                     <label for="inputValue">Mana Regen: </label>
-                    <input name="inputValue" type="text" id="hb4" />
+                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbInput4" />
                     <br>
 
                     <label for="inputValue">Attack Damage: </label>
-                    <input name="inputValue" type="text" id="hb5" />
+                    <input name="inputValue" type="text" class="hbFlt d10s" id="hbInput5" />
                     <br>
                     
                     <label for="inputValue">Attack Speed: </label>
-                    <input name="inputValue" type="text" id="hb6" />
+                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbInput6" />
                     <br>
 
                     <label for="inputValue">Attack Range: </label>
-                    <input name="inputValue" type="text" id="hb7" />
+                    <input name="inputValue" type="text" class="hbFlt d10s" id="hbInput7" />
                     <br>
 
                     <label for="inputValue">Movement Speed: </label>
-                    <input name="inputValue" type="text" id="hb8" />
+                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbInput8" />
                     <br>
 
                     <button name="Submit" type="button" id="hbBtn" onclick="funcHB()">Submit</button>
@@ -158,6 +158,8 @@
 
         <script type="text/javascript">
 
+        /*
+
         $('#hb2').on("focusout", function(){
 
             let hb2Val = (parseInt($(this).val())).toFixed(2);
@@ -165,6 +167,22 @@
             $(this).val(hb2Val);
 
         });
+
+        */
+
+        let heroJaina = {
+            heroName: 'Jaina',
+            heroHealth: '1365',
+            heroHgen: '2.84',
+            heroMana: '500',
+            heroMgen: '3.00',
+            heroAtkDmg: '60.0',
+            heroAtkSpd: '1.0',
+            heroAtkRng: '5.5',
+            heroMove: '100'
+        }
+
+        console.log(heroJaina);
         
         </script>
         
