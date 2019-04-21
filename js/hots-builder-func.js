@@ -3,17 +3,21 @@ $('input').on("focusout", function(){
 
     if($(this).hasClass('hbFlt')){
 
-        if($(this).hasClass('d100s')){
+        if($(this).val() === null || $(this).val().match(/^ *$/) !== null){
+            $(this).val(''); 
+        }
 
-            let hbValChk = (parseInt($(this).val())).toFixed(2);
+        else if($(this).hasClass('d100s')){
+
+            let hbValChk = parseFloat($(this).val()).toFixed(2);
 
             $(this).val(hbValChk);
 
         }
 
-        if($(this).hasClass('d10s')){
+        else if($(this).hasClass('d10s')){
             
-            let hbValChk = (parseInt($(this).val())).toFixed(1);
+            let hbValChk = parseFloat($(this).val()).toFixed(1);
 
             $(this).val(hbValChk);
 
