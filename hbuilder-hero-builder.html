@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HotS - Hero Builder</title>
+        <meta name="description" content="__">
+        
+        <!-- CSS -->
+        
+        <style>
+
+            * {
+                box-sizing: border-box;
+                font-family: 'Exo', sans-serif;
+            }
+                
+            /* IMPORTS
+            /////////// */
+            
+            /* Exo */
+            @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+            /* font-family: 'Exo', sans-serif; */
+            
+            /* ////////// */
+
+            div.site-container {
+                width: 980px;
+                height: auto;
+                margin: 0 auto;
+            }
+
+                div.site-container h1 {
+                    font-size: 2em;
+                    text-align: center;
+                }
+
+            form#hbForm {
+                background: orange;
+
+                width: 100%;
+                padding: 12px;
+            }
+
+                form#hbForm fieldset {
+                    border: none;
+
+                    padding: 0;
+                }
+
+                form#hbForm legend {
+                    font-size: 2em;
+                }
+
+                form#hbForm label,
+                form#hbForm input {
+                    display: block;
+                    float: left;
+                }
+
+                form#hbForm label {
+                    line-height: 32px;
+                    text-align: right;
+
+                    width: 18%;
+                    height: 32px;
+                    margin-right: 2%;
+                }
+
+                form#hbForm input {
+                    width: 80%;
+                    height: 26px;
+                    margin: 3px 0px;
+                }
+
+            .output-console {
+                display: block;
+                background: #29292e;
+                border-radius: 4px;
+                color: #f8f8f2;
+                font-family: monospace;
+                overflow-y: scroll;
+
+                width: 96%;
+                height: 200px;
+                margin: 2%;
+                padding: 12px 10px;
+                clear: left;
+            }
+    
+        </style>
+    
+        <!-- JS + jQuery -->
+        
+            <!-- jQuery 3.3.1 Min CDN -->
+        
+                <script
+                    src="http://code.jquery.com/jquery-3.3.1.min.js"
+                    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                    crossorigin="anonymous">
+                </script>
+
+    </head>
+    
+    
+    <body>
+        
+        <div class="site-container">
+
+            <h1>HotS - Hero Builder</h1>
+
+            <form id="hbForm">
+                <fieldset>
+                    <legend>Hero Stats</legend>
+
+                    <label for="inputValue">Health: </label>
+                    <input name="inputValue" type="text" class="hbInt" id="hbInput1" />
+                    <br>
+
+                    <label for="inputValue">Health Regen: </label>
+                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbInput2" />
+                    <br>
+
+                    <label for="inputValue">Mana: </label>
+                    <input name="inputValue" type="text" class="hbInt" id="hbInput3" />
+                    <br>
+
+                    <label for="inputValue">Mana Regen: </label>
+                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbInput4" />
+                    <br>
+
+                    <label for="inputValue">Attack Damage: </label>
+                    <input name="inputValue" type="text" class="hbFlt d10s" id="hbInput5" />
+                    <br>
+                    
+                    <label for="inputValue">Attack Speed: </label>
+                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbInput6" />
+                    <br>
+
+                    <label for="inputValue">Attack Range: </label>
+                    <input name="inputValue" type="text" class="hbFlt d10s" id="hbInput7" />
+                    <br>
+
+                    <label for="inputValue">Movement Speed: </label>
+                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbInput8" />
+                    <br>
+
+                    <button name="Submit" type="button" id="hbBtn" onclick="funcHB()">Submit</button>
+
+                </fieldset>
+            </form>
+
+            <div class="output-console"></div>
+
+        </div>
+
+        <script type="text/javascript" src="js/hots-builder-func.js"></script>
+
+        <script type="text/javascript">
+
+        /*
+
+        $('#hb2').on("focusout", function(){
+
+            let hb2Val = (parseInt($(this).val())).toFixed(2);
+
+            $(this).val(hb2Val);
+
+        });
+
+        */
+
+        let heroJaina = {
+            heroName: 'Jaina',
+            heroHealth: '1365',
+            heroHgen: '2.84',
+            heroMana: '500',
+            heroMgen: '3.00',
+            heroAtkDmg: '60.0',
+            heroAtkSpd: '1.0',
+            heroAtkRng: '5.5',
+            heroMove: '100'
+        }
+
+        console.log(heroJaina);
+        
+        </script>
+        
+    </body>
+    
+</html>
