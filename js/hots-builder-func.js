@@ -36,22 +36,23 @@ $('input').on("focusout", function(){
 
 function funcHB() {
 
-    let hbHealth, hbHgen, hbMana, hbMgen, hbAtkDmg, hbAtkSpd, hbAtkRng, hbMove;
+    let hbHealth = {hbName: 'hbHealth', hbVal: parseInt($('#hbHealth').val())}
+    let hbHgen   = {hbName: 'hbHgen', hbVal: parseFloat($('#hbHgen').val()).toFixed(2)}
+    let hbMana   = {hbName: 'hbMana', hbVal: parseInt($('#hbMana').val())}
+    let hbMgen   = {hbName: 'hbMgen', hbVal: parseFloat($('#hbMgen').val()).toFixed(2)}
+    let hbAtkDmg = {hbName: 'hbAtkDmg', hbVal: parseFloat($('#hbAtkDmg').val()).toFixed(1)}
+    let hbAtkSpd = {hbName: 'hbAtkSpd', hbVal: parseFloat($('#hbAtkSpd').val()).toFixed(2)}
+    let hbAtkRng = {hbName: 'hbAtkRng', hbVal: parseFloat($('#hbAtkRng').val()).toFixed(1)}
+    let hbMove   = {hbName: 'hbMove', hbVal: parseFloat($('#hbMove').val()).toFixed(2)}
 
     let hbVals = [hbHealth, hbHgen, hbMana, hbMgen, hbAtkDmg, hbAtkSpd, hbAtkRng, hbMove];
 
-    console.log(hbVals);
-
-    for(let i=0; i <=7; i++) {
-
-    }
-
-    console.log(hbVals);
+    console.log(JSON.stringify(hbVals));
 
     for(let i=0; i <= 7; i++) {
 
-        $(".output-console").prepend(
-            hbVals[i] + "<br>"
+        $(".output-console").append(
+            hbVals[i].hbName + " : " + hbVals[i].hbVal + "<br>"
         );
 
     }
