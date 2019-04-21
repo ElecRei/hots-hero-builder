@@ -12,24 +12,20 @@ This is a hero builder for the "Heroes of the Storm" game from Blizzard. With it
 
 ## Current Progress
 
-Currently working on building the layout for the Hero Builder itself. This will include for now a basic form and output area similar to the sandbox. Unlike the sandbox though this form will include all the stats/values necessary for a hero ([Heroes of the Storm Wiki - Statistics](https://heroesofthestorm.gamepedia.com/Statistics)) and then calculate the values for you. For now it's going to be pretty simple. :grin:
+Currently working on the Hero Builder and fixing up any issues with the form. Next steps include building a proper output area for values, adding ability areas and tidying up the form a bit.
 
 Below is a brief to-do list for the week that is updated weekly:
 
-#### Weekly To-do's for the week of *April 14th - 20th*
+#### Weekly To-do's for the week of *April 21st - 27th*
 
 * Start building Hero Builder page
   * Build necessary form with required fields
+  * Check for any issues and fix them related to form
+  * Create proper output area for values
+  * Update form styling
 * Update Sandbox
   * Look into other formulas needed and include other operations for some formulas (i.e. subtract a percentage from a value)
 * Flesh out the repo a bit more
-* ~~Finish up sandbox~~
-  * ~~Include new Mana formulas and fixes~~
-  * ~~Finish layout design~~
-  * ~~Close any remaining project tasks~~
-  * ~~Merge with primary dev branch~~
-* ~~Organize project files and clean up code~~
-* ~~Finish global formulas/calculations needed for builder~~
 
 
 ## Important Links
@@ -38,3 +34,4 @@ Below is a brief to-do list for the week that is updated weekly:
 * **HotS Scaling Formulas**
   * [Heroes of the Storm Wiki - Scaling](https://heroesofthestorm.gamepedia.com/Scaling#Formula)
   * [Heroes of the Storm Wiki - Mana](https://heroesofthestorm.gamepedia.com/Mana#Scaling)
+* [Heroes of the Storm Wiki - Statistics](https://heroesofthestorm.gamepedia.com/Statistics)
