@@ -87,6 +87,23 @@
                 padding: 12px 10px;
                 clear: left;
             }
+
+            table.output-table {
+                border-collapse: collapse;
+            }
+
+                th,td {
+                    border: 1px solid lightgray;
+                    font-family: 'Exo', sans-serif;
+                    font-size: 1.2em;
+                    text-align: center;
+                    
+                    padding: 4px 6px;
+                }
+                    
+                    th { font-weight: 700; }
+                
+                    td { font-weight: 500; }
     
         </style>
     
@@ -151,6 +168,25 @@
             </form>
 
             <div class="output-console"></div>
+
+            <table class="output-table">
+                <thead class="output-table-head">
+                    <tr>
+                        <th>Health</th>
+                        <th>Health Regen</th>
+                        <th>Mana</th>
+                        <th>Mana Regen</th></th>
+                        <th>Attack Damage</th>
+                        <th>Attack Speed</th>
+                        <th>Attack Range</th>
+                        <th>Movement</th>
+                    </tr>
+                </thead>
+
+                <tbody class="output-table-body">
+                </tbody>
+
+            </table>
 
         </div>
 

@@ -57,4 +57,17 @@ function funcHB() {
 
     }
 
+    $(".output-table-body").append(
+        `<tr>` +
+        `<td> ${ hbVals[0].hbVal } </td>` +
+        `<td> ${ hbVals[1].hbVal } </td>` +
+        `<td> ${ hbVals[2].hbVal } </td>` +
+        `<td> ${ hbVals[3].hbVal } </td>` +
+        `<td> ${ hbVals[4].hbVal } </td>` +
+        `<td> ${ hbVals[5].hbVal } </td>` +
+        `<td> ${ hbVals[6].hbVal } </td>` +
+        `<td> ${ hbVals[7].hbVal } </td>` +
+        `</tr>`
+    );
+
 }
