@@ -14,6 +14,10 @@ This is a hero builder for the "Heroes of the Storm" game from Blizzard. With it
 
 Currently working on the Hero Builder and fixing up any issues with the form. Next steps include building a proper output area for values, adding ability areas and tidying up the form a bit.
 
+**Update - 04/23/19**
+
+I'm going to be starting a new project for organzing this repo and getting it a bit more refined. The overall reason why is because I noticed when I had four different branches that were branches from other branches it got a bit confusing to navigate everything. So I'm going to try to update the README, make a wiki and get a site going for this project.
+
 Below is a brief to-do list for the week that is updated weekly:
 
 #### Weekly To-do's for the week of *April 21st - 27th*
