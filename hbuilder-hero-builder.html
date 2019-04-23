@@ -87,6 +87,24 @@
                 padding: 12px 10px;
                 clear: left;
             }
+
+            table.output-table {
+                border-collapse: collapse;
+            }
+
+                th,td {
+                    border: 1px solid lightgray;
+                    font-family: 'Exo', sans-serif;
+                    font-size: 1.2em;
+                    text-align: center;
+                    
+                    width: 12.5%;
+                    padding: 4px 6px;
+                }
+                    
+                    th { font-weight: 700; }
+                
+                    td { font-weight: 500; }
     
         </style>
     
@@ -114,35 +132,35 @@
                     <legend>Hero Stats</legend>
 
                     <label for="inputValue">Health: </label>
-                    <input name="inputValue" type="text" class="hbInt" id="hbInput1" />
+                    <input name="inputValue" type="text" class="hbInt" id="hbHealth" />
                     <br>
 
                     <label for="inputValue">Health Regen: </label>
-                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbInput2" />
+                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbHgen" />
                     <br>
 
                     <label for="inputValue">Mana: </label>
-                    <input name="inputValue" type="text" class="hbInt" id="hbInput3" />
+                    <input name="inputValue" type="text" class="hbInt" id="hbMana" />
                     <br>
 
                     <label for="inputValue">Mana Regen: </label>
-                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbInput4" />
+                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbMgen" />
                     <br>
 
                     <label for="inputValue">Attack Damage: </label>
-                    <input name="inputValue" type="text" class="hbFlt d10s" id="hbInput5" />
+                    <input name="inputValue" type="text" class="hbFlt d10s" id="hbAtkDmg" />
                     <br>
                     
                     <label for="inputValue">Attack Speed: </label>
-                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbInput6" />
+                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbAtkSpd" />
                     <br>
 
                     <label for="inputValue">Attack Range: </label>
-                    <input name="inputValue" type="text" class="hbFlt d10s" id="hbInput7" />
+                    <input name="inputValue" type="text" class="hbFlt d10s" id="hbAtkRng" />
                     <br>
 
                     <label for="inputValue">Movement Speed: </label>
-                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbInput8" />
+                    <input name="inputValue" type="range" max="200" min="10" step="10" value="100" class="hbFlt d100s" id="hbMove" /><span class="hbMoveRange"></span>
                     <br>
 
                     <button name="Submit" type="button" id="hbBtn" onclick="funcHB()">Submit</button>
@@ -151,6 +169,25 @@
             </form>
 
             <div class="output-console"></div>
+
+            <table class="output-table">
+                <thead class="output-table-head">
+                    <tr>
+                        <th>Health</th>
+                        <th>Health Regen</th>
+                        <th>Mana</th>
+                        <th>Mana Regen</th></th>
+                        <th>Attack Damage</th>
+                        <th>Attack Speed</th>
+                        <th>Attack Range</th>
+                        <th>Movement</th>
+                    </tr>
+                </thead>
+
+                <tbody class="output-table-body">
+                </tbody>
+
+            </table>
 
         </div>
 
@@ -169,20 +206,6 @@
         });
 
         */
-
-        let heroJaina = {
-            heroName: 'Jaina',
-            heroHealth: '1365',
-            heroHgen: '2.84',
-            heroMana: '500',
-            heroMgen: '3.00',
-            heroAtkDmg: '60.0',
-            heroAtkSpd: '1.0',
-            heroAtkRng: '5.5',
-            heroMove: '100'
-        }
-
-        console.log(heroJaina);
         
         </script>
         
