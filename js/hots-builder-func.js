@@ -33,6 +33,12 @@ $('input').on("focusout", function(){
 
 });
 
+$('#hbMove').on("change", function(){
+
+    $('.hbMoveRange').html($('#hbMove').val() + '%');
+    console.log('Test');
+
+});
 
 function funcHB() {
 

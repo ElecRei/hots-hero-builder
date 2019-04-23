@@ -98,6 +98,7 @@
                     font-size: 1.2em;
                     text-align: center;
                     
+                    width: 12.5%;
                     padding: 4px 6px;
                 }
                     
@@ -159,7 +160,7 @@
                     <br>
 
                     <label for="inputValue">Movement Speed: </label>
-                    <input name="inputValue" type="text" class="hbFlt d100s" id="hbMove" />
+                    <input name="inputValue" type="range" max="200" min="10" step="10" value="100" class="hbFlt d100s" id="hbMove" /><span class="hbMoveRange"></span>
                     <br>
 
                     <button name="Submit" type="button" id="hbBtn" onclick="funcHB()">Submit</button>
