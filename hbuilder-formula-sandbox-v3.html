@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HotS - Hero Builder - Formula Sandbox</title>
+        <meta name="description" content="__">
+
+        <!-- CSS -->
+        
+        <style>
+
+            * {
+                box-sizing: border-box;
+                font-family: 'Exo', sans-serif;
+            }
+                
+            /* IMPORTS
+            /////////// */
+            
+            /* Exo */
+            @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+            /* font-family: 'Exo', sans-serif; */
+            
+            /* ////////// */
+
+        </style>
+
+        <!-- JS + jQuery -->
+    
+            <!-- jQuery 3.3.1 Min CDN -->
+        
+            <script
+                src="http://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous">
+            </script>
+
+    </head>
+
+    <body>
+
+        <div class="site-container">
+
+            <div class="site-section" id="section-one">
+
+                <h1>HotS Hero Builder - Calculator Sandbox</h1>
+
+                <p>This is a calculator sandbox for HotS and Hero Builder to find out how much a value increases or decreases based on level, percentage, etc.</p>
+
+                <p><strong>For Example:</strong></p>
+
+                <br>
+
+                <p>If you want to find out what a hero's ability's damage is at Lv.10, you can use the level scaling calculator.</p>
+
+            </div>
+
+            <div class="site-section" id="section-two">
+
+                <form class="calc-form" id="scaling">
+                    <fieldset>
+                        <legend>Stat/Ability Scaling</legend>
+
+                        <label>Stat Type</label>
+                        <select name="inputStat" id="scaleStat" required>
+                            <option value="" hidden>Select an option</option>
+                            <optgroup label="Hero Stats">
+                                <option value="Health" selected>Health</option>
+                                <option value="Health Regen">Health Regen</option>
+                                <option value="Mana">Mana</option>
+                                <option value="Mana Regen">Mana Regen</option>
+                                <option value="Attack Damage">Attack Damage</option>
+                            </optgroup>
+                            <optgroup label="Ability Stats">
+                                <option value="Ability Damage">Ability Damage</option>
+                                <option value="Ability Healing">Ability Healing</option>
+                                <option value="Ability Shields">Ability Shields</option>
+                            </optgroup>
+                        </select>
+
+                        <label for="inputModifier">Stat Value: </label>
+                        <input name="inputModifier" type="text" id="scaleVal" placeholder="Enter base value here for health, mana, damage, etc" />
+                        <br>
+
+                        <label for="inputModifier">Scaling Modifier: </label>
+                        <input name="inputModifier" type="text" id="scaleMod" /><span>%</span>
+                        <br>
+
+                        <label for="inputLevel">Level: </label>
+                        <input name="inputLevel" type="text" id="scaleLvl" />
+                        <br>
+    
+                        <button name="Submit" type="button" id="statScaleBtn" onclick="scalingFormula()">Submit</button>
+    
+                    </fieldset>
+                </form>
+            
+            </div>
+
+            <div class="site-section" id="section-three">
+            
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="js/hots-builder-formulas-v3.js"></script>
+        
+    </body>
+    
+</html>
