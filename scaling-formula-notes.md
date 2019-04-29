@@ -31,14 +31,14 @@ Certain stats output to specific decimals, usually to the tenths or hundreths pa
 
 * Whole Numbers
     * Health <sup>*Hero Stats*</sup>
-    * Mana *Hero Stats*
-    * Ability Damage *Ability Stats*
-    * Ability Healing *Ability Stats*
-    * Ability Shields *Ability Stats*
+    * Mana <sup>*Hero Stats*</sup>
+    * Ability Damage <sup>*Ability Stats*</sup>
+    * Ability Healing <sup>*Ability Stats*</sup>
+    * Ability Shields <sup>*Ability Stats*</sup>
 
 * One Decimal Place
-    * Attack Damage *Hero Stats*
+    * Attack Damage <sup>*Hero Stats*</sup>
 
 * Two Decimal Places
-    * Health Regen *Hero Stats*
-    * Mana Regen *Hero Stats*
+    * Health Regen <sup>*Hero Stats*</sup>
+    * Mana Regen <sup>*Hero Stats*</sup>
