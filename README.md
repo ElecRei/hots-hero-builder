@@ -20,7 +20,7 @@ I'm going to be starting a new project for organzing this repo and getting it a 
 
 Below is a brief to-do list for the week that is updated weekly:
 
-#### Weekly To-do's for the week of *April 21st - 27th*
+#### Weekly To-do's for the week of *April 28th - May 4th*
 
 * Start building Hero Builder page
   * Build necessary form with required fields
