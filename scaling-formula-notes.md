@@ -30,7 +30,7 @@ These can be sorted into two groups; Hero Stats and Ability Stats:
 Certain stats output to specific decimals, usually to the tenths or hundreths past the decimal (.0 or .00):
 
 * Whole Numbers
-    * Health *Hero Stats*
+    * Health <sup>*Hero Stats*</sup>
     * Mana *Hero Stats*
     * Ability Damage *Ability Stats*
     * Ability Healing *Ability Stats*
