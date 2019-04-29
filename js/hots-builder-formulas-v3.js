@@ -8,8 +8,12 @@ $('select#scaleStat').on("click", function(){
         $(this).attr('class', 'd100s');
     }
 
-    if($(this).val() === "Attack Damage") {
+    else if($(this).val() === "Attack Damage") {
         $(this).attr('class', 'd10s');
+    }
+
+    else {
+        $(this).attr('class', '');
     }
 
 });
@@ -29,22 +33,39 @@ function scalingFormula() {
 
         scaleVal = parseFloat(scaleVal).toFixed(2);
 
+        //let scaleOutput = Math.round(scaleVal * (Math.pow((1 + scaleModifier), scaleLevel)).toFixed(2));
+
+        let scaleOutput = Math.round(scaleVal * (Math.pow((1 + scaleModifier), scaleLevel)));
+
+        console.log(scaleOutput);
+
     }
 
     if($('select#scaleStat').hasClass('d10s')) {
 
         scaleVal = parseFloat(scaleVal).toFixed(1);
 
+        let scaleOutput = scaleVal * (Math.pow((1 + scaleModifier), scaleLevel));
+
+        scaleOutput = Math.round(scaleOutput).toFixed(1);
+
+        console.log(scaleOutput);
+
     }
 
-    else {
+    if(!$('select#scaleStat').hasClass('d10s') && !$('select#scaleStat').hasClass('d100s')) {
 
         scaleVal = parseInt(scaleVal);
 
+        let scaleOutput = scaleVal * (Math.pow((1 + scaleModifier), scaleLevel));
+
+        scaleOutput = Math.round(scaleOutput);
+
+        console.log(scaleOutput);
+
     }
 
-    let scaleOutput = Math.round(scaleVal * (Math.pow((1 + scaleModifier), scaleLevel)));
+    //let outputVal = iVal * (Math.pow((1 + iMod), iLvl));
 
-    console.log(scaleOutput);
 
 }
