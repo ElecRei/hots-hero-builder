@@ -14,7 +14,7 @@ The values the user can calculate scaling for:
 * Ability Shields - *The amount of shields an ability provides*
 
 | Stat            | Description                                                                         |
-| --------------- | ----------------------------------------------------------------------------------- |
+|:--------------- |:----------------------------------------------------------------------------------- |
 | Health          |  *The Hero's total health*                                                          |
 | Health Regen    |  *The amount of health a hero recovers per second*                                  |
 | Mana            |  *The Hero's total mana*                                                            |
