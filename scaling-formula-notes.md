@@ -13,6 +13,15 @@ The values the user can calculate scaling for:
 * Ability Healing - *The amount of healing an ability heals*
 * Ability Shields - *The amount of shields an ability provides*
 
+Health          |  *The Hero's total health*
+Health Regen    |  *The amount of health a hero recovers per second*
+Mana            |  *The Hero's total mana*
+Mana Regen      |  *The amount of mana a hero recovers per second*
+Attack Damage   |  *The damage a hero deal with their basic attack, rounds up to nearest whole number*
+Ability Damage  |  *The amount of damage an ability deals*
+Ability Healing |  *The amount of healing an ability heals*
+Ability Shields |  *The amount of shields an ability provides*
+
 These can be sorted into two groups; Hero Stats and Ability Stats:
 
 * Hero Stats
