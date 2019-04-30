@@ -75,12 +75,47 @@ let scaleOutput = scaleVal * (Math.pow((1 + scaleModifier), scaleLevel));
 
 ```javascript
 
-//BaseValue × (10 * level)
+//BaseValue × (10 x level)
 
 let outputVal = iVal + (10 * iLvl); // Mana
 
-//BaseValue × (0.0975 * level)
+//BaseValue × (0.0975 x level)
 
 let outputVal = 2.90 + (parseFloat(0.0975)*iLvl); // Mana Regen
 
 ```
+
+#### Percentage
+
+##### Adding percent to value
+
+```javascript
+
+//OutputValue = BaseValue x PercentValue
+//OutputValue = BaseValue + OutputValue
+//OutputValue = OutputValue
+
+let outputVal = iVal * iPct;
+
+outputVal = iVal + outputVal;
+
+outputVal = Math.ceil(outputVal);
+
+```
+
+##### Subtracting percent from value
+
+```javascript
+
+//OutputValue = BaseValue x PercentValue
+//OutputValue = BaseValue - OutputValue
+//OutputValue = OutputValue
+
+let outputVal = iVal * iPct;
+
+outputVal = iVal - outputVal;
+
+outputVal = Math.ceil(outputVal);
+
+```
+
