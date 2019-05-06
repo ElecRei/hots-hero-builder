@@ -98,6 +98,33 @@
             
             </div>
 
+            <form class="calc-form" id="cooldown">
+                <fieldset>
+                    <legend>Cooldown Calculator</legend>
+
+                    <label>Stat Type</label>
+                    <select name="inputStat" id="cooldownOp" required>
+                        <option value="" hidden>Select an option</option>
+                        <option value="Health" selected>Health</option>
+                    </select>
+
+                    <label for="inputModifier">Stat Value: </label>
+                    <input name="inputModifier" type="text" id="scaleVal" placeholder="Enter base value here for health, mana, damage, etc" />
+                    <br>
+
+                    <label for="inputModifier">Scaling Modifier: </label>
+                    <input name="inputModifier" type="text" id="scaleMod" /><span>%</span>
+                    <br>
+
+                    <label for="inputLevel">Level: </label>
+                    <input name="inputLevel" type="text" id="scaleLvl" />
+                    <br>
+
+                    <button name="Submit" type="button" id="statScaleBtn" onclick="scalingFormula()">Submit</button>
+
+                </fieldset>
+            </form>
+
             <div class="site-section" id="section-three">
             
             </div>

@@ -18,6 +18,21 @@ $('select#scaleStat').on("click", function(){
 
 });
 
+function cooldownFormula() {
+
+
+    // The inital cooldown value
+    let cdVal;
+
+    // The cooldown modifier
+    let cdMod;
+
+    // The operator, increasing or decreasing cooldown
+    let cdOp;
+
+
+}
+
 
 function scalingFormula() {
 
@@ -29,13 +44,20 @@ function scalingFormula() {
 
     let scaleLevel = $('#scaleLvl').val();
 
+    let scaleOutput;
+
     if($('select#scaleStat').hasClass('d100s')) {
 
         scaleVal = parseFloat(scaleVal).toFixed(2);
 
         //let scaleOutput = Math.round(scaleVal * (Math.pow((1 + scaleModifier), scaleLevel)).toFixed(2));
 
-        let scaleOutput = Math.round(scaleVal * (Math.pow((1 + scaleModifier), scaleLevel)));
+        if(scaleStat == 'Mana Regen') {
+            scaleOutput = (2.90 + (parseFloat(0.0975)*scaleLevel)).toFixed(2);
+        }
+        else {
+            scaleOutput = (scaleVal * (Math.pow((1 + scaleModifier), scaleLevel))).toFixed(2);
+        }
 
         console.log(scaleOutput);
 
@@ -45,7 +67,7 @@ function scalingFormula() {
 
         scaleVal = parseFloat(scaleVal).toFixed(1);
 
-        let scaleOutput = scaleVal * (Math.pow((1 + scaleModifier), scaleLevel));
+        scaleOutput = scaleVal * (Math.pow((1 + scaleModifier), scaleLevel));
 
         scaleOutput = Math.round(scaleOutput).toFixed(1);
 
@@ -57,9 +79,15 @@ function scalingFormula() {
 
         scaleVal = parseInt(scaleVal);
 
-        let scaleOutput = scaleVal * (Math.pow((1 + scaleModifier), scaleLevel));
+        if(scaleStat == "Mana") {
+            scaleOutput = scaleVal + (10 * scaleLevel);
+        }
 
-        scaleOutput = Math.round(scaleOutput);
+        else {
+            scaleOutput = scaleVal * (Math.pow((1 + scaleModifier), scaleLevel));
+
+            scaleOutput = Math.round(scaleOutput);
+        }
 
         console.log(scaleOutput);
 
