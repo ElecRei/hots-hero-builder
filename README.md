@@ -20,15 +20,17 @@ I'm going to be starting a new project for organzing this repo and getting it a 
 
 Below is a brief to-do list for the week that is updated weekly:
 
-#### Weekly To-do's for the week of *April 28th - May 4th*
+#### Weekly To-do's for the week of *May 5th - May 11th*
 
+* Update Sandbox
+  * Look into other formulas needed and include other operations for some formulas (i.e. subtract a percentage from a value)
+  * Redo sandbox to include:
+    * Multiple calculators with their own outputs
 * Start building Hero Builder page
   * Build necessary form with required fields
   * Check for any issues and fix them related to form
   * Create proper output area for values
   * Update form styling
-* Update Sandbox
-  * Look into other formulas needed and include other operations for some formulas (i.e. subtract a percentage from a value)
 * Flesh out the repo a bit more
 
 
