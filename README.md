@@ -12,26 +12,18 @@ This is a hero builder for the "Heroes of the Storm" game from Blizzard. With it
 
 ## Current Progress
 
-Currently working on the Hero Builder and fixing up any issues with the form. Next steps include building a proper output area for values, adding ability areas and tidying up the form a bit.
-
-**Update - 04/23/19**
-
-I'm going to be starting a new project for organzing this repo and getting it a bit more refined. The overall reason why is because I noticed when I had four different branches that were branches from other branches it got a bit confusing to navigate everything. So I'm going to try to update the README, make a wiki and get a site going for this project.
+Good morning everyone, it's been while since I've updated the README for HotS Hero Builder so that's what I'm doing right now. Currently I have gone back to work on the sandbox to get all the formulas I need out of the way before continuing one with the builder proper. That way there's less back and forth between the two areas.
 
 Below is a brief to-do list for the week that is updated weekly:
 
-#### Weekly To-do's for the week of *May 5th - May 11th*
+#### Weekly To-do's for the week of *May 12th - May 18th*
 
 * Update Sandbox
   * Look into other formulas needed and include other operations for some formulas (i.e. subtract a percentage from a value)
   * Redo sandbox to include:
     * Multiple calculators with their own outputs
-* Start building Hero Builder page
-  * Build necessary form with required fields
-  * Check for any issues and fix them related to form
-  * Create proper output area for values
-  * Update form styling
-* Flesh out the repo a bit more
+    * Consider multiple variations for formulas (i.e. subtracting percentages in contrast to adding them)
+    * Offer custom formula building
 
 
 ## Important Links
