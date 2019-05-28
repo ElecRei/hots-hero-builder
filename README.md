@@ -16,7 +16,7 @@ Good morning everyone, it's been while since I've updated the README for HotS He
 
 Below is a brief to-do list for the week that is updated weekly:
 
-#### Weekly To-do's for the week of *May 12th - May 18th*
+#### Weekly To-do's for the week of *May 26<sup>th</sup> - June 1<sup>st</sup>*
 
 * Update Sandbox
   * Look into other formulas needed and include other operations for some formulas (i.e. subtract a percentage from a value)
